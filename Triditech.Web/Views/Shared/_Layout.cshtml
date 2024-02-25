@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using static Triditech.Common.GeneralApplicationConstants
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -24,7 +26,11 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - Triditech.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; Triditech Trading System @ReleaseYear
+            @if (DateTime.UtcNow.Year != ReleaseYear)
+            {
+                @Html.Raw($" - {DateTime.UtcNow.Year}")
+            }
         </div>
     </footer>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

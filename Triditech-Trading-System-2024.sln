@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triditech.Web", "Triditech.Web\Triditech.Web.csproj", "{2727A7C5-BF9F-47CB-AB11-6B801E3B44A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triditech.Web", "Triditech.Web\Triditech.Web.csproj", "{2727A7C5-BF9F-47CB-AB11-6B801E3B44A7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{6F790CCB-FF66-4E2C-A7D4-E18267545135}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{4214B9D9-691A-471F-B5F1-AE3EA2E1BA51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triditech.Common", "Triditech.Common\Triditech.Common.csproj", "{F4A375BA-BF1D-4795-BAD4-3EB66FC9CBCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triditech.Common", "Triditech.Common\Triditech.Common.csproj", "{F4A375BA-BF1D-4795-BAD4-3EB66FC9CBCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{A92AB82A-2DF8-4A05-8446-679B6E819EE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triditech.Data.Models", "Triditech.Data.Models\Triditech.Data.Models.csproj", "{EA483566-2EE7-4E6D-9671-26E7FD8C9ED6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,10 @@ Global
 		{F4A375BA-BF1D-4795-BAD4-3EB66FC9CBCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4A375BA-BF1D-4795-BAD4-3EB66FC9CBCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4A375BA-BF1D-4795-BAD4-3EB66FC9CBCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA483566-2EE7-4E6D-9671-26E7FD8C9ED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA483566-2EE7-4E6D-9671-26E7FD8C9ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA483566-2EE7-4E6D-9671-26E7FD8C9ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA483566-2EE7-4E6D-9671-26E7FD8C9ED6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2727A7C5-BF9F-47CB-AB11-6B801E3B44A7} = {6F790CCB-FF66-4E2C-A7D4-E18267545135}
 		{F4A375BA-BF1D-4795-BAD4-3EB66FC9CBCE} = {4214B9D9-691A-471F-B5F1-AE3EA2E1BA51}
+		{EA483566-2EE7-4E6D-9671-26E7FD8C9ED6} = {A92AB82A-2DF8-4A05-8446-679B6E819EE7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB39ED39-788A-441C-A1F2-1286130DCBE8}
