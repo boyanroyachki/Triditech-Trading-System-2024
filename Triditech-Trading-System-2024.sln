@@ -5,6 +5,12 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triditech.Web", "Triditech.Web\Triditech.Web.csproj", "{2727A7C5-BF9F-47CB-AB11-6B801E3B44A7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{6F790CCB-FF66-4E2C-A7D4-E18267545135}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{4214B9D9-691A-471F-B5F1-AE3EA2E1BA51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triditech.Common", "Triditech.Common\Triditech.Common.csproj", "{F4A375BA-BF1D-4795-BAD4-3EB66FC9CBCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +21,17 @@ Global
 		{2727A7C5-BF9F-47CB-AB11-6B801E3B44A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2727A7C5-BF9F-47CB-AB11-6B801E3B44A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2727A7C5-BF9F-47CB-AB11-6B801E3B44A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4A375BA-BF1D-4795-BAD4-3EB66FC9CBCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4A375BA-BF1D-4795-BAD4-3EB66FC9CBCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4A375BA-BF1D-4795-BAD4-3EB66FC9CBCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4A375BA-BF1D-4795-BAD4-3EB66FC9CBCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2727A7C5-BF9F-47CB-AB11-6B801E3B44A7} = {6F790CCB-FF66-4E2C-A7D4-E18267545135}
+		{F4A375BA-BF1D-4795-BAD4-3EB66FC9CBCE} = {4214B9D9-691A-471F-B5F1-AE3EA2E1BA51}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB39ED39-788A-441C-A1F2-1286130DCBE8}
