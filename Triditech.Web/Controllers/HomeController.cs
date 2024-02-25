@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Triditech.Web.Models;
+using static Triditech.Common.NotificationMessagesConstants;
 
 namespace Triditech.Web.Controllers
 {
@@ -15,6 +16,7 @@ namespace Triditech.Web.Controllers
 
         public IActionResult Index()
         {
+            TempData[SuccessMessage] = "Welcome to the site!";
             return View();
         }
 
