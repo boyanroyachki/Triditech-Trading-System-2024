@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Triditech.Web.Data
+namespace Triditech.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {

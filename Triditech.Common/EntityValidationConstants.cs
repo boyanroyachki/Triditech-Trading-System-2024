@@ -6,5 +6,15 @@
     /// </summary>
     public static class EntityValidationConstants
     {
+        public static class Category
+        {
+            public const int MaxNameLength = 50;
+            public const int MinNameLength = 3;
+        }
+
+        public static class Product
+        {
+
+        }
     }
 }

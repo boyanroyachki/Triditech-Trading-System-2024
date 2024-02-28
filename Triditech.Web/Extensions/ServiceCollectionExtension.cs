@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Triditech.Web.Data;
+using Triditech.Data;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
