@@ -20,7 +20,7 @@ namespace Triditech.Data.Models
         [Comment("Category name")]
         public required string Name { get; set; }
 
-        [Comment("")]
+        [Comment("Category's Products")]
         public List<Product> Products { get; init; } 
     }
 }

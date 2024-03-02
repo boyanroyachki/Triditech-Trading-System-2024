@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Triditech.Common\Triditech.Common.csproj" />
-    <ProjectReference Include="..\Triditech.Data\Triditech.Data.csproj" />
   </ItemGroup>
 
 </Project>

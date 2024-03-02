@@ -17,11 +17,11 @@ namespace Triditech.Data.Models
         public Guid Id { get; set; }
 
         [Comment("Image's Product's ID")]
-        public required Guid ProductId { get; set; }
+        public Guid ProductId { get; set; }
 
         [Comment("Image's Product")]
         [ForeignKey(nameof(ProductId))]
-        public required Product Product { get; set; }
+        public Product Product { get; set; }
 
         [Comment("Image's URL")]
         [MaxLength()]

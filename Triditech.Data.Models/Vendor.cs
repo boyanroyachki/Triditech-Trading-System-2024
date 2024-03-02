@@ -20,18 +20,18 @@ namespace Triditech.Data.Models
         [Comment("Vendor identifier")]
         public Guid Id { get; set; }
 
-        [Required]
         [MaxLength(MaxVendorsPhoneLength)]
         [Comment("Vendor's phone")]
-        public string PhoneNumber { get; set; } = string.Empty;
+        public required string PhoneNumber { get; set; }
 
-        [Required]
         [Comment("User Identifier")]
-        public string UserId { get; set; } = string.Empty;
+        public required string UserId { get; set; }
 
         [ForeignKey(nameof(UserId))]
-        public IdentityUser User { get; set; } = null!;
+        [Comment("Vendor's Application User")]
+        public required IdentityUser User { get; set; }
 
+        [Comment("The collection of the vendor's products")]
         public List<Product> Products { get; set; }
     }
 }

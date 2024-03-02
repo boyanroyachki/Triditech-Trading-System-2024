@@ -18,13 +18,16 @@ namespace Triditech.Data.Models
         [Comment("Product ID")]
         public Guid Id { get; set; }
 
-        [Comment("")]
+        [Comment("Product's name")]
         [MaxLength(MaxNameLength)]
         public required string Name { get; set; }
 
         [Comment("Product Description")]
         [MaxLength(MaxDescriptionLength)]
         public required string Description { get; set; }
+
+        [Comment("Product Quantity")]
+        public required int Quantity { get; set; }
 
         [Comment("Product's industry")]
         [MaxLength(MaxIndustryLength)]
@@ -50,7 +53,8 @@ namespace Triditech.Data.Models
         public required Category Category { get; set; }
 
         [Comment("Product's price in EURO")]
-        public required float PriceEuro { get; set; }
+        [Column(TypeName = "decimal(18,2)")]
+        public required decimal PriceEuro { get; set; }
 
         [Comment("Product's vendor's ID")]
         public required Guid VendorId { get; set; }
