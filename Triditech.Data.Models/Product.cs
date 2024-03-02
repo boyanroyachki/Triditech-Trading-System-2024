@@ -1,10 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using static Triditech.Common.EntityValidationConstants.Product;
 
 namespace Triditech.Data.Models
 {
-    [Comment("")]
+    [Comment("Product table")]
     public class Product
     {
         public Product()
@@ -14,46 +15,52 @@ namespace Triditech.Data.Models
         }
 
         [Key]
-        [Comment("")]
+        [Comment("Product ID")]
         public Guid Id { get; set; }
 
         [Comment("")]
+        [MaxLength(MaxNameLength)]
         public required string Name { get; set; }
 
-        [Comment("")]
+        [Comment("Product Description")]
+        [MaxLength(MaxDescriptionLength)]
         public required string Description { get; set; }
 
-        [Comment("")]
+        [Comment("Product's industry")]
+        [MaxLength(MaxIndustryLength)]
         public required string Industry { get; set; }
 
-        [Comment("")]
+        [Comment("The material of the Product")]
+        [MaxLength(MaxMaterialLength)]
         public required string Material { get; set; }
 
-        [Comment("")]
+        [Comment("The process of making of the Product")]
+        [MaxLength(MaxProcessNameLength)]
         public required string Process { get; set; }
 
-        [Comment("")]
+        [Comment("Product's weight")]
+        [MaxLength(MaxWeightLength)]
         public required string Weight { get; set; }
 
-        [Comment("")]
+        [Comment("Product's category's ID")]
         public required int CategoryId { get; set; }
 
-        [Comment("")]
+        [Comment("Product's Category")]
         [ForeignKey(nameof(CategoryId))]
         public required Category Category { get; set; }
 
-        [Comment("")]
-        public required decimal PriceEuro { get; set; }
+        [Comment("Product's price in EURO")]
+        public required float PriceEuro { get; set; }
 
-        [Comment("")]
+        [Comment("Product's vendor's ID")]
         public required Guid VendorId { get; set; }
 
-        [Comment("")]
+        [Comment("Product's Vendor")]
         [ForeignKey(nameof(VendorId))]
         public required Vendor Vendor { get; set; }
 
-        [Comment("")]
-        public virtual ICollection<ProductImage> ProductImages { get; set; }
+        [Comment("Collection of Images for the product")]
+        public virtual List<ProductImage> ProductImages { get; set; }
 
     }
 }
