@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Triditech.Web.Models;
@@ -14,7 +15,8 @@ namespace Triditech.Web.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        [AllowAnonymous]
+        public  IActionResult Index()
         {
             TempData[SuccessMessage] = "Welcome to the site!";
             return View();

@@ -12,8 +12,8 @@ using Triditech.Data;
 namespace Triditech.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240302130951_AddingDb")]
-    partial class AddingDb
+    [Migration("20240302134301_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -434,13 +434,13 @@ namespace Triditech.Data.Migrations
                     b.HasOne("Triditech.Data.Models.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Triditech.Data.Models.Vendor", "Vendor")
                         .WithMany("Products")
                         .HasForeignKey("VendorId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Category");
@@ -453,7 +453,7 @@ namespace Triditech.Data.Migrations
                     b.HasOne("Triditech.Data.Models.Product", "Product")
                         .WithMany("ProductImages")
                         .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Product");
